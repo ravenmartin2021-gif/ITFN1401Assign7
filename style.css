@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    background-color: #d3d3d3;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+}
+
+header {
+    background-color: #000000;
+    color: #ff69b4;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    margin: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+main {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+}
+
+h2 {
+    color: #000000;
+    font-size: 24px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ff69b4;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 15px;
+}
+/* Mobile*/
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        margin: 15px;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    main {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #ff69b4;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    margin: 8px 0;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: black;
+    color: #ff69b4;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        margin: 10px;
+        padding: 12px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
+header h1 {
+    animation: rotate 2s ease;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
